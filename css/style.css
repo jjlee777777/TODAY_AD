@@ -1137,7 +1137,7 @@ visual.style.backgroundImage=
   border-radius: 20px;
 }
 
-.contact-form input,
+.contact-form input:not([type="checkbox"]),
 .contact-form textarea {
   width: 100%;
   padding: 18px;
@@ -1386,18 +1386,24 @@ visual.style.backgroundImage=
 
 }
 
-.agree {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 10px 0 15px;
-  font-size: 15px;
+.agree{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    gap:10px;
+    margin:15px 0;
+    font-size:15px;
+    color:#555;
 }
 
-.agree input {
-  width: auto;
-  margin: 0;
+.agree input{
+    width:18px;
+    height:18px;
+    margin:0;
+    flex:none;
 }
+
+
 
 /* ===========================
    문의하기(Formspree)
@@ -1454,4 +1460,20 @@ visual.style.backgroundImage=
 
 .contact-form button:hover{
     background:#f58220;
+}
+
+.agree{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+    font-size:15px;
+    color:#555;
+}
+
+.agree input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    margin:0;
+    padding:0;
 }
