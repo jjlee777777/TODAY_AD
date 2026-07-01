@@ -1525,3 +1525,67 @@ visual.style.backgroundImage=
 .success-box a:hover {
   background: #f58220;
 }
+
+/* ===========================
+   모바일 반응형
+=========================== */
+
+@media screen and (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .top-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-visual,
+  .sub-visual {
+    height: 300px;
+  }
+
+  .main-text h1,
+  .sub-visual-text h1 {
+    font-size: 32px;
+  }
+
+  .main-text p,
+  .sub-visual-text span {
+    font-size: 15px;
+  }
+
+  .contact-wrap {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .contact-form,
+  .contact-info-box {
+    width: 100%;
+  }
+
+  .contact-info-box {
+    margin-top: 30px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+}
