@@ -46,15 +46,25 @@
 
   <div class="contact-wrap">
 
-    <div class="contact-form">
-      <input type="text" placeholder="회사명">
-      <input type="text" placeholder="담당자명">
-      <input type="text" placeholder="연락처">
-      <input type="email" placeholder="이메일">
-      <textarea placeholder="문의내용"></textarea>
-      <button>문의 보내기</button>
-    </div>
+  
+<div class="contact-form">
+  <form action="https://formspree.io/f/xjgqayr1" method="POST">
+    <input type="text" name="company" placeholder="회사명" required>
+    <input type="text" name="name" placeholder="담당자명" required>
+    <input type="tel" name="phone" placeholder="연락처" required>
+    <input type="email" name="email" placeholder="이메일" required>
+    <textarea name="message" placeholder="문의내용" required></textarea>
 
+    <label class="agree">
+      <input type="checkbox" required>
+      개인정보 수집 및 이용에 동의합니다.
+    </label>
+
+    <button type="submit">문의 보내기</button>
+  </form>
+</div>	  
+	  
+	  
     <div class="contact-info-box">
       <h3>Customer Center</h3>
       <p><strong>TEL</strong> 02-3664-3711</p>
