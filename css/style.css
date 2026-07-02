@@ -1205,3 +1205,14 @@ body {
     margin-top: 10px;
   }
 }
+
+
+/* 메인 모바일 문의하기 버튼 강제 수정 */
+@media screen and (max-width: 768px) {
+  .contact-section .contact-btn {
+    display: block !important;
+    width: fit-content !important;
+    margin: 40px auto 0 !important;
+    clear: both !important;
+  }
+}
