@@ -524,31 +524,6 @@ nav a:hover::after{
 
 }
 
-let current=0;
-
-const images=[
-"images/main1.jpg",
-"images/main2.jpg",
-"images/main3.jpg"
-];
-
-const visual=document.querySelector(".main-visual");
-
-setInterval(function(){
-
-current++;
-
-if(current>=images.length){
-
-current=0;
-
-}
-
-visual.style.backgroundImage=
-"linear-gradient(rgba(0,20,60,.65),rgba(0,20,60,.35)),url('"+images[current]+"')";
-
-},4000);
-
 
 /* 서브페이지 공통 배너 */
 .sub-visual {
@@ -1658,5 +1633,5 @@ visual.style.backgroundImage=
   .footer-call {
     margin-top: 25px;
   }
-}
-
+	
+	
