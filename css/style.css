@@ -1193,3 +1193,15 @@ body {
     display: block;
   }
 }
+
+/* 메인페이지 문의하기 버튼 모바일 겹침 해결 */
+@media screen and (max-width: 768px) {
+  .contact-text {
+    margin-bottom: 35px;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
