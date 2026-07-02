@@ -1704,69 +1704,26 @@ nav a:hover::after{
   }
 }	
 	
-/* ===========================
-   전체 서브페이지 모바일 세로형 수정
-=========================== */
+/* 회사소개 CEO 모바일 전용 수정 */
 @media screen and (max-width: 768px) {
 
-  .company-intro,
-  .value-list,
-  .strength-list,
-  .business-grid,
-  .contact-wrap,
-  .location-wrap {
-    width: 100%;
-    display: block;
-    padding: 0 25px;
+  .ceo-box {
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 20px !important;
+    padding: 45px 28px !important;
+    box-sizing: border-box !important;
   }
 
-  .company-left,
-  .company-right,
-  .company-img,
-  .company-text,
-  .contact-form,
-  .contact-info-box,
-  .map-box,
-  .location-info {
-    width: 100%;
+  .ceo-box h2 {
+    font-size: 34px !important;
+    line-height: 1.45 !important;
+    text-align: left !important;
+    word-break: keep-all !important;
   }
 
-  .company-right,
-  .contact-info-box,
-  .location-info {
-    margin-top: 35px;
-  }
-
-  .value-card,
-  .strength-card,
-  .business-box {
-    width: 100%;
-    margin-bottom: 25px;
-  }
-
-  .portfolio-grid {
-    width: 100%;
-    grid-template-columns: 1fr;
-    padding: 0 25px;
-  }
-
-  .history-list {
-    width: 100%;
-    padding: 0 25px;
-  }
-
-  .history-item {
-    display: block;
-  }
-
-  .history-item h3 {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .sub-visual {
-    height: 260px;
+  .ceo-box p {
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
   }
 }	
-	
-	
