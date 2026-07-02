@@ -1139,22 +1139,38 @@ body {
     width: 100%;
   }
 
-  .company-intro,
-  .value-list,
-  .history-list,
-  .strength-list,
-  .business-grid,
-  .portfolio-grid,
-  .contact-wrap,
-  .location-wrap {
+.company-intro,
+.value-list,
+.history-list,
+.strength-list,
+.business-grid,
+.portfolio-grid,
+.contact-wrap,
+.location-wrap {
     width: 100% !important;
     max-width: 100% !important;
     display: block !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
     box-sizing: border-box !important;
-  }
-
+}	
+	
+.business-box,
+.portfolio-box,
+.value-card,
+.strength-card,
+.contact-form,
+.contact-info-box,
+.map-box,
+.location-info,
+.company-left,
+.company-right {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}	
+	
+	
   .company-left,
   .company-right,
   .value-card,
