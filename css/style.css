@@ -1634,4 +1634,72 @@ nav a:hover::after{
     margin-top: 25px;
   }
 	
-	
+/* ===========================
+   모바일 메인페이지 수정
+=========================== */
+@media screen and (max-width: 768px) {
+
+  header {
+    position: relative;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main-visual {
+    margin-top: 0;
+    height: 420px;
+    padding: 40px 25px;
+    background-position: center;
+  }
+
+  .main-text h1 {
+    font-size: 42px;
+  }
+
+  .main-text p {
+    font-size: 17px;
+  }
+
+  .business-section,
+  .about-section,
+  .portfolio-section,
+  .contact-section {
+    padding: 70px 25px;
+  }
+
+  .business-list {
+    display: block;
+  }
+
+  .business-card {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .about-section {
+    display: block;
+  }
+
+  .about-image,
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text {
+    margin-top: 35px;
+  }
+
+  .portfolio-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    display: block;
+    text-align: center;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    margin-top: 30px;
+  }
+}	
