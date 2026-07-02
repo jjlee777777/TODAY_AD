@@ -686,6 +686,13 @@ visual.style.backgroundImage=
   color: #fff;
 }
 
+.company-visual{
+    background:
+    linear-gradient(rgba(0,20,60,.65), rgba(0,20,60,.45)),
+    url("../images/company-banner.jpg") center center/cover no-repeat;
+}
+
+
 .sub-visual-text p {
   color: #ff6b00;
   font-size: 20px;
