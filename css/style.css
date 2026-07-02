@@ -1703,27 +1703,3 @@ nav a:hover::after{
     margin-top: 30px;
   }
 }	
-	
-/* 회사소개 CEO 모바일 전용 수정 */
-@media screen and (max-width: 768px) {
-
-  .ceo-box {
-    width: auto !important;
-    max-width: 100% !important;
-    margin: 0 20px !important;
-    padding: 45px 28px !important;
-    box-sizing: border-box !important;
-  }
-
-  .ceo-box h2 {
-    font-size: 34px !important;
-    line-height: 1.45 !important;
-    text-align: left !important;
-    word-break: keep-all !important;
-  }
-
-  .ceo-box p {
-    word-break: keep-all !important;
-    overflow-wrap: break-word !important;
-  }
-}	
