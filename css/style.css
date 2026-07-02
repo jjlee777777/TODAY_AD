@@ -1101,3 +1101,26 @@ footer {
     font-size: 27px;
   }
 }
+
+
+/* 모바일 좌우 흔들림 방지 */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .company-intro,
+  .value-list,
+  .history-list,
+  .strength-list,
+  .business-grid,
+  .portfolio-grid,
+  .contact-wrap,
+  .location-wrap {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
