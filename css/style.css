@@ -757,20 +757,23 @@ nav a:hover::after{
 
 }
 
-/* CEO 인사말 */
 
+/* CEO 인사말 */
 .ceo-section {
-  padding: 100px 0;
+  padding: 100px 20px;
   background: #f7f9fc;
 }
 
 .ceo-box {
-  width: 1200px;
-  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   background: #fff;
-  padding: 70px;
+  padding: 70px 40px;
   border-radius: 20px;
+  text-align: center;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
 .ceo-box h2 {
@@ -778,18 +781,45 @@ nav a:hover::after{
   color: #001b44;
   line-height: 1.4;
   margin: 25px 0;
+  text-align: center;
+  word-break: keep-all;
 }
 
 .ceo-box p {
   font-size: 18px;
   line-height: 1.9;
   color: #555;
+  text-align: center;
+  word-break: keep-all;
 }
 
 .ceo-name {
   margin-top: 35px;
   color: #001b44 !important;
 }
+
+/* CEO 모바일 */
+@media screen and (max-width: 768px) {
+  .ceo-section {
+    padding: 60px 20px;
+  }
+
+  .ceo-box {
+    padding: 45px 24px;
+  }
+
+  .ceo-box h2 {
+    font-size: 30px;
+    line-height: 1.45;
+  }
+
+  .ceo-box p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+
 
 /* 핵심가치 */
 
@@ -1633,6 +1663,8 @@ nav a:hover::after{
   .footer-call {
     margin-top: 25px;
   }
+}
+	
 	
 /* ===========================
    모바일 메인페이지 수정
