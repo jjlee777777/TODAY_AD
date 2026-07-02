@@ -1703,3 +1703,70 @@ nav a:hover::after{
     margin-top: 30px;
   }
 }	
+	
+/* ===========================
+   전체 서브페이지 모바일 세로형 수정
+=========================== */
+@media screen and (max-width: 768px) {
+
+  .company-intro,
+  .value-list,
+  .strength-list,
+  .business-grid,
+  .contact-wrap,
+  .location-wrap {
+    width: 100%;
+    display: block;
+    padding: 0 25px;
+  }
+
+  .company-left,
+  .company-right,
+  .company-img,
+  .company-text,
+  .contact-form,
+  .contact-info-box,
+  .map-box,
+  .location-info {
+    width: 100%;
+  }
+
+  .company-right,
+  .contact-info-box,
+  .location-info {
+    margin-top: 35px;
+  }
+
+  .value-card,
+  .strength-card,
+  .business-box {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .portfolio-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0 25px;
+  }
+
+  .history-list {
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .history-item {
+    display: block;
+  }
+
+  .history-item h3 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sub-visual {
+    height: 260px;
+  }
+}	
+	
+	
