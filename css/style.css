@@ -1124,3 +1124,56 @@ body {
     box-sizing: border-box;
   }
 }
+
+/* 서브페이지 모바일 좌우 밀림 해결 */
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .sub-visual {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .company-intro,
+  .value-list,
+  .history-list,
+  .strength-list,
+  .business-grid,
+  .portfolio-grid,
+  .contact-wrap,
+  .location-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  .company-left,
+  .company-right,
+  .value-card,
+  .strength-card,
+  .contact-form,
+  .contact-info-box,
+  .map-box,
+  .location-info {
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+
+  .business-box,
+  .portfolio-box {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .history-item {
+    display: block;
+  }
+}
