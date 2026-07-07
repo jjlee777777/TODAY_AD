@@ -340,12 +340,13 @@ url("file:///F|/todayad/images/main1.jpg") center/cover no-repeat;
 /* ===========================
    SUB VISUAL
 =========================== */
+
 .sub-visual {
   height: 360px;
   margin-top: 80px;
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-url("file:///F|/todayad/images/company.jpg") center/cover no-repeat;
+    url("../images/company.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,32 +357,33 @@ url("file:///F|/todayad/images/company.jpg") center/cover no-repeat;
 .company-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-url("file:///F|/todayad/images/company-banner.jpg") center/cover no-repeat;
+    url("../images/company-banner.jpg") center/cover no-repeat;
 }
 
 .business-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-url("file:///F|/todayad/images/business.jpg") center/cover no-repeat;
+    url("../images/business.jpg") center/cover no-repeat;
 }
 
 .portfolio-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-url("file:///F|/todayad/images/portfolio-bg.jpg") center/cover no-repeat;
+    url("../images/portfolio-bg.jpg") center/cover no-repeat;
 }
 
 .contact-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-url("file:///F|/todayad/images/contact.jpg") center/cover no-repeat;
+    url("../images/contact.jpg") center/cover no-repeat;
 }
 
 .location-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-url("file:///F|/todayad/images/location.jpg") center/cover no-repeat;
+    url("../images/location.jpg") center/cover no-repeat;
 }
+
 
 .sub-visual-text p {
   color: #ff6b00;
