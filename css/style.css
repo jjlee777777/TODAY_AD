@@ -115,7 +115,7 @@ nav a:hover::after {
   height: 560px;
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.35)),
-    url("../images/main1.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/main1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   padding-left: 110px;
@@ -345,7 +345,7 @@ nav a:hover::after {
   margin-top: 80px;
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-    url("../images/company.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/company.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,31 +356,31 @@ nav a:hover::after {
 .company-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-    url("../images/company-banner.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/company-banner.jpg") center/cover no-repeat;
 }
 
 .business-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-    url("../images/business.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/business.jpg") center/cover no-repeat;
 }
 
 .portfolio-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-    url("../images/portfolio-bg.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/portfolio-bg.jpg") center/cover no-repeat;
 }
 
 .contact-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-    url("../images/contact.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/contact.jpg") center/cover no-repeat;
 }
 
 .location-visual {
   background:
     linear-gradient(rgba(0,20,60,0.65), rgba(0,20,60,0.45)),
-    url("../images/location.jpg") center/cover no-repeat;
+url("file:///F|/todayad/images/location.jpg") center/cover no-repeat;
 }
 
 .sub-visual-text p {
@@ -599,8 +599,8 @@ nav a:hover::after {
 
 .business-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 35px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .business-box {
@@ -1215,4 +1215,10 @@ body {
     margin: 40px auto 0 !important;
     clear: both !important;
   }
+}
+
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
