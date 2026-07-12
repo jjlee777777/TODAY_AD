@@ -1,5 +1,7 @@
 const form = document.querySelector(".contact-form form");
 
+if (form) { 
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -23,6 +25,7 @@ form.addEventListener("submit", function (e) {
       alert("네트워크 오류가 발생했습니다. 다시 시도해 주세요.");
     });
 });
+}
 
 // 메인 배너 슬라이드
 const slides = document.querySelectorAll(".slide");
