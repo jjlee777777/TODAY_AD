@@ -1409,12 +1409,25 @@ body {
 }
 /* 세바메드만 적용 */
 
+/* 세바메드 사진만 원본 비율 유지 */
 
 
 .seba-item img{
   width:100%;
   height:auto;
   display:block;
+}
+
+
+/* .seba-item img{
+  width:100%;
+  height:auto;
+  display:block;
   transform:scale(1.05);
   transform-origin:center center;
+} */
+
+.seba-item img{
+    margin-bottom:-21px;
 }
+
