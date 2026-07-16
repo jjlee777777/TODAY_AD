@@ -291,6 +291,10 @@ url("../images/main2.jpg") center/cover no-repeat;
   transition: 0.3s;
 }
 
+
+
+
+
 .portfolio-item:hover {
   transform: translateY(-10px);
 }
@@ -1402,4 +1406,15 @@ body {
   .popup-button {
     width: 100%;
   }
+}
+/* 세바메드만 적용 */
+
+
+
+.seba-item img{
+  width:100%;
+  height:auto;
+  display:block;
+  transform:scale(1.05);
+  transform-origin:center center;
 }
