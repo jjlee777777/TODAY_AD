@@ -1431,3 +1431,71 @@ body {
     margin-bottom:-21px;
 }
 
+
+/* TS 샴푸 동영상 팝업 */
+
+.ts-video-card{
+  cursor:pointer;
+}
+
+.local-video-modal{
+  position:fixed;
+  inset:0;
+  z-index:99999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:30px;
+}
+
+.local-video-modal.active{
+  display:flex;
+}
+
+.local-video-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.88);
+}
+
+.local-video-content{
+  position:relative;
+  z-index:1;
+  width:100%;
+  max-width:1000px;
+}
+
+.local-video-content video{
+  width:100%;
+  max-height:80vh;
+  display:block;
+  background:#000;
+}
+
+.local-video-close{
+  position:absolute;
+  top:-50px;
+  right:0;
+  border:0;
+  background:transparent;
+  color:#fff;
+  font-size:42px;
+  line-height:1;
+  cursor:pointer;
+}
+
+body.video-open{
+  overflow:hidden;
+}
+
+@media screen and (max-width:768px){
+
+  .local-video-modal{
+    padding:18px;
+  }
+
+  .local-video-close{
+    top:-44px;
+    font-size:38px;
+  }
+}
