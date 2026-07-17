@@ -251,19 +251,71 @@
 
 </a>  
 	  
+	<div
+  class="portfolio-item ts-video-card"
+  id="tsVideoCard"
+  role="button"
+  tabindex="0"
+  aria-label="TS 샴푸 영상 보기">
+
+  <img
+    src="images/portfolio6.jpg"
+    alt="TS 샴푸 홍보영상">
+
+  <h3>TS 샴푸</h3>
+
+</div>  	  
+	  
+	  
 	  	  
 	  
 	
-    <div class="portfolio-item">
+  <!--  <div class="portfolio-item">
       <img src="images/portfolio6.jpg" alt="TS 샴푸">
       <h3>TS 샴푸</h3>
-    </div>
+    </div>  -->
 
-  </div>
+ 
 
 </section>
 	
-	
+	<!-- TS 샴푸 동영상 팝업 -->
+
+<div
+  class="local-video-modal"
+  id="localVideoModal"
+  aria-hidden="true">
+
+  <div class="local-video-overlay" id="localVideoOverlay"></div>
+
+  <div class="local-video-content">
+
+    <button
+      class="local-video-close"
+      id="localVideoClose"
+      type="button"
+      aria-label="영상 닫기">
+      ×
+    </button>
+
+    <video
+      id="tsVideo"
+      controls
+      playsinline
+      preload="metadata"
+      poster="images/portfolio6.jpg">
+
+      <source
+        src="videos/ts-shampoo.mp4"
+        type="video/mp4">
+
+      브라우저가 동영상 재생을 지원하지 않습니다.
+
+    </video>
+
+  </div>
+
+</div>
 
 	<!-- Contact -->
 <section class="contact-section">
