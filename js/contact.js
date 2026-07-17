@@ -53,34 +53,108 @@ const todayCloseCheck = document.getElementById("todayCloseCheck");
 
 if (todayPopup && popupClose && todayCloseCheck) {
 
-  // 오늘 하루 보지 않기를 선택한 날짜
-  const savedCloseDate = localStorage.getItem("todayPopupCloseDate");
+  const now = new Date();
 
-  // 오늘 날짜
-  const currentDate = new Date().toLocaleDateString("ko-KR");
+  const currentDate =
+    now.getFullYear() + "-" +
+    String(now.getMonth() + 1).padStart(2, "0") + "-" +
+    String(now.getDate()).padStart(2, "0");
 
-  // 오늘 이미 닫았다면 팝업 숨기기
-  if (savedCloseDate === currentDate) {
-    todayPopup.classList.add("popup-hidden");
+  // 팝업 닫기
+  function closeTodayPopup() {
+    if (todayCloseCheck.checked) {
+      try {
+        localStorage.setItem("todayPopupCloseDate", currentDate);
+      } catch (error) {
+        console.log("저장 기능을 사용할 수 없습니다.");
+      }
+    }
+
+    todayPopup.style.display = "none";
   }
 
-  // X 버튼 클릭
-  popupClose.addEventListener("click", () => {
-
-    // 오늘 하루 보지 않기 체크 여부
-    if (todayCloseCheck.checked) {
-      localStorage.setItem("todayPopupCloseDate", currentDate);
-    }
-
-    todayPopup.classList.add("popup-hidden");
+  // X 버튼
+  popupClose.addEventListener("click", function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    closeTodayPopup();
   });
 
-  // 어두운 배경 클릭 시 닫기
-  todayPopup.addEventListener("click", (event) => {
-
+  // 어두운 바깥 영역 클릭
+  todayPopup.addEventListener("click", function (event) {
     if (event.target === todayPopup) {
-      todayPopup.classList.add("popup-hidden");
+      closeTodayPopup();
     }
+  });
 
+  // 오늘 하루 보지 않기 기록 확인
+  try {
+    const savedCloseDate =
+      localStorage.getItem("todayPopupCloseDate");
+
+    if (savedCloseDate === currentDate) {
+      todayPopup.style.display = "none";
+    }
+  } catch (error) {
+    console.log("저장 기록을 확인할 수 없습니다.");
+  }
+}
+
+
+// TS 샴푸 MP4 팝업
+
+const tsVideoCard = document.getElementById("tsVideoCard");
+const localVideoModal = document.getElementById("localVideoModal");
+const localVideoOverlay = document.getElementById("localVideoOverlay");
+const localVideoClose = document.getElementById("localVideoClose");
+const tsVideo = document.getElementById("tsVideo");
+
+function openLocalVideo() {
+  if (!localVideoModal || !tsVideo) return;
+
+  localVideoModal.classList.add("active");
+  localVideoModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("video-open");
+
+  tsVideo.currentTime = 0;
+  tsVideo.play().catch(() => {
+    // 모바일 브라우저에서 자동 재생이 차단되면
+    // 사용자가 재생 버튼을 직접 누르면 됩니다.
   });
 }
+
+function closeLocalVideo() {
+  if (!localVideoModal || !tsVideo) return;
+
+  tsVideo.pause();
+  tsVideo.currentTime = 0;
+
+  localVideoModal.classList.remove("active");
+  localVideoModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("video-open");
+}
+
+if (tsVideoCard) {
+  tsVideoCard.addEventListener("click", openLocalVideo);
+
+  tsVideoCard.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openLocalVideo();
+    }
+  });
+}
+
+if (localVideoClose) {
+  localVideoClose.addEventListener("click", closeLocalVideo);
+}
+
+if (localVideoOverlay) {
+  localVideoOverlay.addEventListener("click", closeLocalVideo);
+}
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeLocalVideo();
+  }
+});
